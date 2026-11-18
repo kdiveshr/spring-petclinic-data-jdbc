@@ -207,6 +207,8 @@
                          context; differs in every environment). -->
                     <excludeProperties>
                         <excludeProperty>^git\.build\.host$</excludeProperty>
+                        <excludeProperty>^git\.branch$</excludeProperty>
+                        <excludeProperty>^git\.build\.number(\.unique)?$</excludeProperty>
                     </excludeProperties>
                 </configuration>
             </plugin>
