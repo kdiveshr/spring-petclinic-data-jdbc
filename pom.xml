@@ -202,6 +202,12 @@
                     <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties
                     </generateGitPropertiesFilename>
                     <failOnNoGitDirectory>false</failOnNoGitDirectory>
+                    <!-- Reproducibility study fix, playbook step 6: exclude the
+                         container hostname from git.properties (ambient build
+                         context; differs in every environment). -->
+                    <excludeProperties>
+                        <excludeProperty>^git\.build\.host$</excludeProperty>
+                    </excludeProperties>
                 </configuration>
             </plugin>
 
