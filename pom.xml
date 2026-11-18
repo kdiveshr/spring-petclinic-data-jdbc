@@ -15,6 +15,8 @@
     <name>petclinic</name>
 
     <properties>
+        <!-- Reproducibility study fix, playbook step 2: pin archive timestamps to the pinned commit time. -->
+        <project.build.outputTimestamp>1767810134</project.build.outputTimestamp>
 
         <!-- Generic properties -->
         <java.version>17</java.version>
